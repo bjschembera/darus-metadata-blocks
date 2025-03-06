@@ -1,0 +1,15 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	MathModDB		Metadata for Mathematical Models													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	engMetaMode	Data Generation	Approach to data generation		text	0		TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		EngMeta	
+	engMetaMeasuredVar	Measured Variables	Specification of captured (measured / simulated / surveyed / dependent) variables.		none	1		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		EngMeta	https://schema.org/variableMeasured
+	engMetaMeasuredVarName	Name	Name of this variable.		text	2	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	engMetaMeasuredVar	EngMeta	https://schema.org/name
+	engMetaMeasuredVarSymbol	Symbol	The symbol used to describe this variable.		text	3	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	https://schema.org/unitCode
+	engMetaMeasuredVarUnit	Unit	The unit or scale of this variable.		text	4	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	https://schema.org/unitCode
+	engMetaMeasuredVarError	Error	A value for the uncertainty of this variable.		float	5	; #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
+
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	engMetaMode	Simulation	simulation	0												
+	engMetaMode	Analysis	analysis	1												
+	engMetaMode	Experiment	experiment	2												
+	engMetaMode	Prediction	prediction	3												
