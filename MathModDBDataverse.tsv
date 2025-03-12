@@ -1,7 +1,40 @@
 #metadataBlock	name	dataverseAlias	displayName	blockURI												
-	MathModDB		Metadata for Mathematical Modelssss													
+	mmdb		Mathematical Model Metadata													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
-	mmdbModel	Data Generation	Approach to data generation		text	0		TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		MathModDB	
-	mmdbQuantity	Measured Variables	Specification of captured (measured / simulated / surveyed / dependent) variables.		none	1		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		MathModDB	https://schema.org/variableMeasured
-	mmdbMathFormulation	Name	Name of this variable.		text	2	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	engMetaMeasuredVar	MathModDB	https://schema.org/name											
-											
+	mmdbResearchField	Research Field	The research field the data is created in		text	0	(#VALUE)	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		mmdb	
+	mmdbResearchProblem	Research Problem	The research problem that is modelled		text	1									mmdb	
+	mmdbModel	Mathematical Model	The name of the mathematical model		text	2		TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		mmdb	
+	mmdbModelFormulation	Mathematical Formulation	The mathematical formulation of the model in LaTeX		text	3		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE	mmdbModel	mmdb	
+	mmdbModelFormulationRole	Role	Role of the mathematical formulation, e.g. a boundary condition, ...		text	3		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE	mmdbModel	mmdb	
+	mmdbModelFormulationQuantity	Quantity	The quantity occurring in the mathematical formulation		text	4	#VALUE	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE	mmdbModelFormulation	mmdb	
+	mmdbModelFormulationQuantityName	Name	Name of the quantity		text	5							FALSE	mmdbModelFormulationQuantity	mmdb	
+	mmdbModelFormulationQuantitySymbol	Symbol	Symbol of the quantity		text	6							FALSE	mmdbModelFormulationQuantity	mmdb	
+	mmdbModelFormulationQuantityUnit	Unit	The unit		text	7							FALSE	mmdbModelFormulationQuantity	mmdb	
+	mmdbModelFormulationQuantityKind	Quantity Kind	The overarching kind of quantity		text											
+	mmdbModelComputationalTask	Computational Task	Computational task associated with the model		text									mmdbModel		
+	mmdbModelComputationalTaskFormulation	Formulation	Mathematical formulation of the computational task													
+	mmdbModelComputationalTaskFormulationRole	Role	Role of the computational task, e.g. input, output, objective, …													
+	mmdbModelComputationalTaskFormulationQuantity	Quantity	The quantity occurring in the mathematical formulation													
+	mmdbModelComputationalTaskFormulationQuantityRole	Role	The role of the quantity													
+	mmdbModelComputationalTaskFormulationQuantityName	Name	Name of the quantity													
+	mmdbModelComputationalTaskFormulationQuantitySymbol	Symbol	Symbol of the quantity													
+	mmdbModelComputationalTaskFormulationQuantityUnit	Unit	The unit													
+	mmdbModelComputationalTaskFormulationQuantityKind	Quantity Kind	The overarching kind of quantity													
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	mmdbModelComputationalTaskFormulationQuantityRole	Input														
+	mmdbModelComputationalTaskFormulationQuantityRole	Output														
+	mmdbModelComputationalTaskFormulationQuantityRole	Constant														
+	mmdbModelComputationalTaskFormulationQuantityRole	Parameter														
+	mmdbModelComputationalTaskFormulationQuantityRole	Objective														
+	mmdbModelComputationalTaskFormulationRole	Boundary Condition														
+	mmdbModelComputationalTaskFormulationRole	Constraint Condition														
+	mmdbModelComputationalTaskFormulationRole	Coupling Condition														
+	mmdbModelComputationalTaskFormulationRole	Initial Condition														
+	mmdbModelComputationalTaskFormulationRole	Final Condition														
+	mmdbModelFormulationRole	Boundary Condition														
+	mmdbModelFormulationRole	Constraint Condition														
+	mmdbModelFormulationRole	Coupling Condition														
+	mmdbModelFormulationRole	Initial Condition														
+	mmdbModelFormulationRole	Final Condition														
+																
+	TODO: hierarchie + MaRDI Ids + Comp Task															
