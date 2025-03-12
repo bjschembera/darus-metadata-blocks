@@ -5,7 +5,4 @@
 	mmdbQuantity	Measured Variables	Specification of captured (measured / simulated / surveyed / dependent) variables.		none	1		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		MathModDB	https://schema.org/variableMeasured
 	mmdbMathFormulation	Name	Name of this variable.		text	2	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	engMetaMeasuredVar	MathModDB	https://schema.org/name
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
-	engMetaMode	Simulation	simulation	0												
-	engMetaMode	Analysis	analysis	1												
-	engMetaMode	Experiment	experiment	2												
-	engMetaMode	Prediction	prediction	3												
+											
