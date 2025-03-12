@@ -1,5 +1,5 @@
 #metadataBlock	name	dataverseAlias	displayName	blockURI												
-	MathModDB		Metadata for Mathematical Models													
+	MathModDB		Metadata for Mathematical Modelssss													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
 	mmdbModel	Data Generation	Approach to data generation		text	0		TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		MathModDB	
 	mmdbQuantity	Measured Variables	Specification of captured (measured / simulated / surveyed / dependent) variables.		none	1		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		MathModDB	https://schema.org/variableMeasured
