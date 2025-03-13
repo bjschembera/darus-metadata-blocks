@@ -1,26 +1,26 @@
 #metadataBlock	name	dataverseAlias	displayName	blockURI												
 	mmdb		Mathematical Model Metadata													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
-	mmdbResearchField	Research Field	The research field the data is created in		text	0	(#VALUE)	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		mmdb	
-	mmdbResearchProblem	Research Problem	The research problem that is modelled		text	1									mmdb	
-	mmdbModel	Mathematical Model	The model that is used to create the data		none	2		TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		mmdb	
-	mmdbModelName	Name	The name of the mathematical model		text	3								mmdbModel	mmdb	
-	mmdbModelMaRDIID	MaRDI ID	MaRDI ID (IRI) of the Model		url	4								mmdbModel	mmdb	
-	mmdbFormulation	Mathematical Formulation	The mathematical formulation of the model(s) 		none	5		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		mmdb	
-	mmdbFormulationExpression	Formulation	A concrete mathematical formulation in LaTeX, MathML, ...		text	6								mmdbFormulation	mmdb	
-	mmdbFormulationRole	Role 	Role of the mathematical formulation, e.g. a boundary condition, ...		text	7		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE	mmdbFormulation	mmdb	
-	mmdbFormulationMaRDIID	MaRDI ID	MaRDI ID  (IRI) of the formulation, if applicable		url	8								mmdbFormulation	mmdb	
-	mmdbQuantity	Quantity	The quantity occurring in the mathematical formulation		none	9	#VALUE	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		mmdb	
-	mmdbQuantityName	Name	Name of the quantity		text	10							FALSE	mmdbQuantity	mmdb	
-	mmdbQuantitySymbol	Symbol	Symbol of the quantity		text	11							FALSE	mmdbQuantity	mmdb	
-	mmdbQuantityUnit	Unit	The unit		text	12							FALSE	mmdbQuantity	mmdb	
-	mmdbQuantityKind	Quantity Kind	The overarching kind of quantity		text	13								mmdbQuantity	mmdb	
-	mmdbQuantityID	ID	IRI for a quantity from a controlled quantity vocabulary, e.g. QUDT, or MaRDI ID		url	14								mmdbQuantity	mmdb	
-	mmdbComputationalTask	Computational Task	Computational task associated with the model		none	15									mmdb	
-	mmdbComputationalTaskName	Name	Name of the computational task		text	16								mmdbComputationalTask	mmdb	
-	mmdbComputationalTaskMaRDIID	MaRDI ID	MaRDI ID (IRI) of the computational task, if applicable 		url	17								mmdbComputationalTask	mmdb	
-	mmdbComputationalTaskFormulation	Formulation	Mathematical formulation of the computational task		text	18								mmdbComputationalTask	mmdb	
-	mmdbComputationalTaskFormulationQuantity	Quantity	The quantity occurring in the mathematical formulation		text	19								mmdbComputationalTask	mmdb	
+	mmdbResearchField	Research Field	The research field the data is created in		text	0	#VALUE	TRUE	FALSE	TRUE	FALSE	TRUE	FALSE		mmdb	
+	mmdbResearchProblem	Research Problem	The research problem that is modelled		text	1	#VALUE	TRUE	FALSE	TRUE	FALSE	TRUE	FALSE		mmdb	
+	mmdbModel	Mathematical Model	The model that is used to create the data		none	2		FALSE	FALSE	TRUE	FALSE	TRUE	TRUE		mmdb	
+	mmdbModelName	Name	The name of the mathematical model		text	3	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	mmdbModel	mmdb	
+	mmdbModelMaRDIID	MaRDI ID	MaRDI ID (IRI) of the Model		url	4	<a href=”#VALUE”>#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	mmdbModel	mmdb	
+	mmdbFormulation	Mathematical Formulation	The mathematical formulation of the model(s) 		none	5		FALSE	FALSE	TRUE	FALSE	TRUE	TRUE		mmdb	
+	mmdbFormulationExpression	Formulation	A concrete mathematical formulation in LaTeX, MathML, ...		textbox	6	#VALUE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE	mmdbFormulation	mmdb	
+	mmdbFormulationRole	Role 	Role of the mathematical formulation, e.g. a boundary condition, ...		text	7	#VALUE	FALSE	TRUE	TRUE	FALSE	TRUE	FALSE	mmdbFormulation	mmdb	
+	mmdbFormulationMaRDIID	MaRDI ID	MaRDI ID  (IRI) of the formulation, if applicable		url	8	<a href=”#VALUE”>#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	mmdbFormulation	mmdb	
+	mmdbQuantity	Quantity	The quantity occurring in the mathematical formulation		none	9		FALSE	FALSE	TRUE	FALSE	TRUE	TRUE		mmdb	
+	mmdbQuantityName	Name	Name of the quantity		text	10	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	mmdbQuantity	mmdb	
+	mmdbQuantitySymbol	Symbol	Symbol of the quantity		text	11	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	mmdbQuantity	mmdb	
+	mmdbQuantityUnit	Unit	The unit		text	12	#VALUE	TRUE	FALSE	FALE	FALSE	TRUE	FALSE	mmdbQuantity	mmdb	
+	mmdbQuantityKind	Quantity Kind	The overarching kind of quantity		text	13	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	mmdbQuantity	mmdb	
+	mmdbQuantityID	ID	IRI for a quantity from a controlled quantity vocabulary, e.g. QUDT, or MaRDI ID		url	14	<a href=”#VALUE”>#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	mmdbQuantity	mmdb	
+	mmdbComputationalTask	Computational Task	Computational task associated with the model		none	15		FALSE	FALSE	TRUE	FALSE	TRUE	TRUE		mmdb	
+	mmdbComputationalTaskName	Name	Name of the computational task		text	16	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	mmdbComputationalTask	mmdb	
+	mmdbComputationalTaskMaRDIID	MaRDI ID	MaRDI ID (IRI) of the computational task, if applicable 		url	17	<a href=”#VALUE”>#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	mmdbComputationalTask	mmdb	
+	mmdbComputationalTaskFormulation	Formulation	Mathematical formulation of the computational task		textbox	18	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	mmdbComputationalTask	mmdb	
+	mmdbComputationalTaskQuantity	Quantity	The quantity occurring in the mathematical formulation		text	19	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	mmdbComputationalTask	mmdb	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	mmdbFormulationRole	Boundary Condition	boundary	0												
 	mmdbFormulationRole	Constraint Condition	constraint	1												
